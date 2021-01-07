@@ -1,0 +1,22 @@
+bootstrap.memory_lock: true
+cluster.name: home_cluster
+http.port: 9200
+http.host: HOST_IP_HERE
+network.host: localhost
+node.data: true
+node.ingest: true
+node.master: true
+node.max_local_storage_nodes: 3
+node.name: Primary-Data-WindowsDesktop
+path.data: C:\Users\stuar\Desktop\home_cluster\Data
+path.logs: C:\Users\stuar\Desktop\home_cluster\Logs
+transport.tcp.port: 9300
+transport.host: HOST_IP_HERE
+xpack.license.self_generated.type: basic
+xpack.security.enabled: false
+discovery.seed_hosts: ["IP_OF_ES_NODE_TO_FIND", "raspberry_pi_1"]
+bootstrap.system_call_filter: false
+
+# FOR AN INTERNAL NETWORK SETUP:
+# [HOST_IP_HERE] - Use the same IP or Domain-Name for options: [http.host, transport.host]
+# - Use "localhost" for the option: [network.host]
